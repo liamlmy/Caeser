@@ -234,6 +234,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SUP3P4KHSX;
+				HEADER_SEARCH_PATHS = " /usr/local/mysql/include";
+				LIBRARY_SEARCH_PATHS = " /usr/local/mysql/lib";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-lm",
+					"-lmysqlclient",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -243,6 +250,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SUP3P4KHSX;
+				HEADER_SEARCH_PATHS = " /usr/local/mysql/include";
+				LIBRARY_SEARCH_PATHS = " /usr/local/mysql/lib";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-lm",
+					"-lmysqlclient",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
